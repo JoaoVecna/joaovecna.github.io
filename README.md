@@ -1,0 +1,2 @@
+# joaovictorcabral.github.io
+Portfolio and professional website of João Victor Cabral | Tech Management student &amp; IT Consultant.
