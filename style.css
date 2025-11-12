@@ -1,0 +1,179 @@
+body {
+  margin: 0;
+  background: radial-gradient(circle at center, #0a0a0a 0%, #000 100%);
+  color: #d9d9d9;
+  font-family: 'Rajdhani', sans-serif;
+  overflow-x: hidden;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(20, 20, 20, 0.8);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  z-index: 1000;
+  box-shadow: 0 0 10px #ff003c55;
+}
+
+.logo {
+  font-family: 'Orbitron', sans-serif;
+  color: #ff003c;
+  text-shadow: 0 0 10px #ff003c;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.menu a {
+  color: #d9d9d9;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #ff003c;
+  text-shadow: 0 0 10px #ff003c;
+}
+
+/* Início */
+.inicio {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(255,0,60,0.15) 0%, rgba(0,0,0,0.95) 80%);
+  z-index: -1;
+}
+
+.foto-perfil {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #ff003c;
+  box-shadow: 0 0 20px #ff003c88;
+  margin-bottom: 20px;
+}
+
+.titulo {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.8rem;
+  color: #ff003c;
+  text-shadow: 0 0 20px #ff003c;
+  animation: energia 2s infinite alternate;
+}
+
+@keyframes energia {
+  from { text-shadow: 0 0 10px #ff003c; }
+  to { text-shadow: 0 0 25px #ff003c; }
+}
+
+.subtitulo {
+  font-size: 1.1rem;
+  color: #d9d9d9;
+  margin: 10px 0 30px;
+}
+
+.botoes {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.btn {
+  background: #ff003c;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ff335c;
+  box-shadow: 0 0 15px #ff003c;
+}
+
+.btn-secundario {
+  background: transparent;
+  border: 1px solid #ff003c;
+}
+
+/* Seções */
+section {
+  padding: 100px 10%;
+}
+
+h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: #ff003c;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.redes a {
+  color: #ff003c;
+  text-decoration: none;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #1a1a1a;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 10px #ff003c44;
+  width: 280px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ff003c;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+  gap: 10px;
+}
+
+input, textarea {
+  background: #111;
+  border: 1px solid #ff003c;
+  border-radius: 5px;
+  color: #d9d9d9;
+  padding: 10px;
+}
+
+footer {
+  background: #111;
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #ff003c33;
+}
